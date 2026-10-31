@@ -1,0 +1,61 @@
+# Unity'nin ürettiği klasörler
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/Assets/Plugins/Editor/JetBrains*
+
+# IDE dosyaları
+.vs/
+.vscode/
+.idea/
+.gradle/
+ExportedObj/
+.consulo/
+
+# Unity'nin ürettiği proje dosyaları
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Derleme çıktıları
+sysinfo.txt
+*.apk
+*.aab
+*.app
+*.unitypackage
+*.unitypackage.meta
+crashlytics-build.properties
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Oyunun çalışırken ürettiği günlük
+/SavunmaGunlugu.txt
+
+# Kullanım lisansı doğrulanamayan arka plan görseli
+/Assets/Sprites/arka plan/mainArka.jpeg
+/Assets/Sprites/arka plan/mainArka.jpeg.meta
+/Assets/Sprites/arka plan/mainArka.jpg.avif
+/Assets/Sprites/arka plan/mainArka.jpg.avif.meta

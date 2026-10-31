@@ -1,0 +1,21 @@
+═══════════════════════════════════════════════════
+        OSMANLI KALESI SAVUNMA GÜNLÜĞÜ
+═══════════════════════════════════════════════════
+Tarih: 29.11.2025 19:30:41
+═══════════════════════════════════════════════════
+
+[19:30:41.823] Simülasyon Başladı. Senaryo: 'Osmanlı Kalesi Savunması'
+[19:30:41.823] Başlangıç Kale Dayanıklılığı: 100, Akçe: 200
+
+                                                 ─
+  OYUN BAŞLADI
+                                                 ─
+
+                                                 ─
+  BASKIN 1 BAŞLADI
+                                                 ─
+[19:30:44.111] Baskın 1: 2 Eşkıya, 1 Lejyoner, 1 Şahin
+
+                                                 ═
+Simülasyon sona erdi: 19:44:35
+                                                 ═
