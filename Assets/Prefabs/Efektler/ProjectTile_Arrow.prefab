@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: -7972519727839568553}
   - component: {fileID: 1447068017806676564}
   - component: {fileID: 7180360874898418103}
-  - component: {fileID: 1721026964840337661}
-  - component: {fileID: 2295520967128389769}
   m_Layer: 0
   m_Name: ProjectTile_Arrow
   m_TagString: Untagged
@@ -292,30 +290,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.7144489, y: 0.28524786}
   m_EdgeRadius: 0
---- !u!114 &1721026964840337661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6424429936781597483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25fd3df22eddc4c21bd170b1770ecd9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Mermi
-  hiz: 5
---- !u!114 &2295520967128389769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6424429936781597483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c784436adf584278a72353571ef022b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ProjectileArrow
-  okHizi: 5
-  okHasari: 10

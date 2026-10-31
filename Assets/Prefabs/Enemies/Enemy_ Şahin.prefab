@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 3668913597127075447}
   - component: {fileID: 2549141999391644845}
   - component: {fileID: -5991699718420689235}
-  - component: {fileID: 5176849242435454503}
   m_Layer: 0
   m_Name: "Enemy_ S\u0327ahin"
   m_TagString: Enemy
@@ -252,26 +251,6 @@ MonoBehaviour:
   paraOdulu: 10
   usHasari: 5
   UcuyoMu: 1
-  saglikBari: {fileID: 0}
---- !u!114 &5176849242435454503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4325733413955678633}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8097295c9a0f644f5aeee5f9dc528e3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Sahin
-  dusmanAdi: "\u015Eahin"
-  MaxCan: 50
-  hiz: 75
-  zirh: 0
-  paraOdulu: 15
-  usHasari: 5
-  UcuyoMu: 0
   saglikBari: {fileID: 0}
 --- !u!1 &8935905090917120178
 GameObject:

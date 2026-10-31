@@ -8203,11 +8203,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7107797074003634658, guid: c541fabe4ab214066b5ccc37f1897bed,
-        type: 3}
-      propertyPath: patlamaEfektiPrefab
-      value: 
-      objectReference: {fileID: 359579973}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
 
     private int sahnedekiDusmanSayisi = 0;
     private bool oyunBitti = false;
+    private bool dalgalarTamamlandi = false;
 
     private void Awake()
     {
@@ -70,6 +71,13 @@ public class GameManager : MonoBehaviour
         sahnedekiDusmanSayisi++;
     }
 
+    // WaveManager tüm dalgaları doğurduğunda çağırır
+    public void DalgalarTamamlandi()
+    {
+        dalgalarTamamlandi = true;
+        KontrolKazandinMi();
+    }
+
     public void DusmanOldu(Dusman dusman)
     {
         sahnedekiDusmanSayisi--;
@@ -89,6 +97,7 @@ public class GameManager : MonoBehaviour
         Debug.Log($"{dusman.DusmanAdi} üsse ulaştı.Oyuncu canı-{dusman.UsHasari}.Kalan Can:{OyuncununCani}");
         GuncelleUI();
         KontrolKaybettinMi();
+        KontrolKazandinMi();
 
         SavunmaGunlugu.Kaydet(
         $"Üsse ulaşıldı: {dusman.DusmanAdi}, Verilen Hasar: {dusman.UsHasari}, Kalan Can: {OyuncununCani}");
@@ -142,25 +151,25 @@ public class GameManager : MonoBehaviour
             Debug.Log("Oyun Bitti! Kaybettiniz.");
             if (kaybettinPanel) kaybettinPanel.SetActive(true);
             Time.timeScale = 0f;
-        }
 
-        SavunmaGunlugu.Kaydet("OYUN SONUCU-KAYBETTİNİZ. Oyuncu canı 0'a düştü.");
+            SavunmaGunlugu.Kaydet("OYUN SONUCU-KAYBETTİNİZ. Oyuncu canı 0'a düştü.");
+        }
     }
 
     public void KontrolKazandinMi()
     {
         if (oyunBitti) return;
 
-        if (hangiDalga >= toplamDalgaSayisi - 1 && sahnedekiDusmanSayisi <= 0)
+        if (dalgalarTamamlandi && sahnedekiDusmanSayisi <= 0)
         {
             oyunBitti = true;
             Debug.Log($"Tüm dalgalar temizlendi.Oyun Kazandın! (Kalan Can: {OyuncununCani},Toplam Para:{OyuncununParasi})");
             if (kazandinPanel) kazandinPanel.SetActive(true);
             Time.timeScale = 0f;
-        }
 
-        SavunmaGunlugu.Kaydet(
-        $"OYUN SONUCU - KAZANDINIZ. Kalan Can: {OyuncununCani}, Toplam Para: {OyuncununParasi}");
+            SavunmaGunlugu.Kaydet(
+            $"OYUN SONUCU - KAZANDINIZ. Kalan Can: {OyuncununCani}, Toplam Para: {OyuncununParasi}");
+        }
     }
 
     #region UI Buton Fonksiyonları

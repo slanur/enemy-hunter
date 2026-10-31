@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 661853717450549586}
   - component: {fileID: 6623349759596072697}
   - component: {fileID: -4001398463740430290}
-  - component: {fileID: 7107797074003634658}
   m_Layer: 0
   m_Name: Projectile_Havan
   m_TagString: Untagged
@@ -218,17 +217,3 @@ MonoBehaviour:
   hiz: 6
   patlamaEfektiPrefab: {fileID: 1608029979315804618, guid: 23ba386ccd9bc4b67a4da80377a8431c,
     type: 3}
---- !u!114 &7107797074003634658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5538613596041289418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ffd1f30893b8414387645653c2aacd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HavanMermisi
-  hiz: 6
-  patlamaEfektiPrefab: {fileID: 0}

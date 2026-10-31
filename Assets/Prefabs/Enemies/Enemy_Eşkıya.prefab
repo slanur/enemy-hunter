@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 4995253782288149597}
   - component: {fileID: -1858329101653608467}
   - component: {fileID: -162052827359922776}
-  - component: {fileID: 1285267227641290672}
   m_Layer: 0
   m_Name: "Enemy_Es\u0327k\u0131ya"
   m_TagString: Enemy
@@ -215,26 +214,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Eskiya
   dusmanAdi: "E\u015Fk\u0131ya"
-  MaxCan: 50
-  hiz: 50
-  zirh: 0
-  paraOdulu: 10
-  usHasari: 5
-  UcuyoMu: 0
-  saglikBari: {fileID: 0}
---- !u!114 &1285267227641290672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2588719159866235830}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e4dbeb925fa640c8b9bdadfd4577ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Eskiya
-  dusmanAdi: Eskiya
   MaxCan: 50
   hiz: 50
   zirh: 0

@@ -189,10 +189,8 @@ Dosya, Unity'nin `Application.persistentDataPath` konumunda bulunur:
 
 Aşağıdakiler kod ve prefab incelemesiyle tespit edildi, oyun çalıştırılarak doğrulanmadı.
 
-- **Ok mermisi:** `ProjectTile_Arrow.prefab` üzerinde fazladan `Mermi` ve `ProjectileArrow` bileşenleri var. Hedefi atanmayan bu bileşenler oku ilk karede yok ettiği için Zehirli Ok Kulesi hasar veremeyebilir.
-- **Havan mermisi:** `Projectile_Havan.prefab` üzerinde iki `HavanMermisi` bileşeni var. Hedefi atanmayan ikincisi mermiyi sahnenin merkezine doğru da çeker.
 - **Oyun sonu ekranı:** Kazandın ve kaybettin panelleri sahnede bağlı değil. Oyun sona erdiğinde yalnızca durur ve sonucu Console'a yazar.
-- **Kazanma kontrolü:** Son düşman öldürülmek yerine üsse ulaşırsa kontrol çalışmaz, oyun bitmez. Son dalga tamamen doğmadan sahnedeki düşmanlar biterse oyun erken kazanılabilir.
+- **Can barı:** Düşman prefab'larındaki `saglikBari` alanı bağlı olmadığı için can barı hasar aldıkça güncellenmez.
 - **Havan fiyatı:** Düğmede 75 yazıyor, gerçek maliyet 80.
 - **Zehir etkisi:** Zehirli Ok Kulesi şu an yalnızca doğrudan hasar verir, zamana yayılan zehir hasarı yok.
 

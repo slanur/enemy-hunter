@@ -41,6 +41,9 @@ public abstract class Dusman : MonoBehaviour
     private float yavaslamaCarpani = 1f;
     private float yavaslamaSuresi = 0f;
 
+    // öldü ya da üsse ulaştı, aynı karede ikinci kez sayılmasın diye
+    private bool oyundanCikti = false;
+
     protected virtual void Start() // alt sınıflar isterseler bunu override edebilirler
     {
         mevcutCan = MaxCan;
@@ -63,7 +66,7 @@ public abstract class Dusman : MonoBehaviour
 
     private void Hareket()
     {
-        if (yol == null) //yol atanmadıysa null dön
+        if (yol == null || oyundanCikti) //yol atanmadıysa null dön
         {
             return;
         }
@@ -79,6 +82,7 @@ public abstract class Dusman : MonoBehaviour
             if (MevcutIndex >= yol.WaypointSayisi)
             {
                 // Üsse ulaştı
+                oyundanCikti = true;
                 GameManager.Instance.DusmanUsseUlasti(this);
                 Destroy(gameObject);
                 return;
@@ -105,6 +109,11 @@ public abstract class Dusman : MonoBehaviour
     //hasar fonksiyonu 
     public void HasarAl(float kuleHasari)
     {
+        if (oyundanCikti)
+        {
+            return;
+        }
+
         //hasar formülü
         float netHasar = kuleHasari * (1f - (Zirh / (Zirh + 100f)));
         mevcutCan -= netHasar;
@@ -117,6 +126,7 @@ public abstract class Dusman : MonoBehaviour
 
         if (mevcutCan <= 0)
         {
+            oyundanCikti = true;
             GameManager.Instance.DusmanOldu(this);
             Destroy(gameObject);
         }

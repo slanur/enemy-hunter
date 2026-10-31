@@ -93,6 +93,8 @@ public class WaveManager : MonoBehaviour
         }
 
         Debug.Log("[WaveManager] Tüm dalgalar tamamlandı.");
+
+        GameManager.Instance.DalgalarTamamlandi();
     }
 
     private void SpawnDusman(Dusman prefab)
