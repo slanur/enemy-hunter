@@ -96,7 +96,7 @@ Her dalgada düşmanlar standart, zırhlı ve uçan sırasıyla doğar. Dalgalar
 1. Depoyu klonla:
 
    ```bash
-   git clone https://github.com/slanur/dusman-avcisi.git
+   git clone https://github.com/slanur/enemy-hunter.git
    ```
 
 2. Unity Hub'da **Add → Add project from disk** ile klasörü seç ve projeyi aç. İlk açılışta paketler ve varlıklar içe aktarılacağı için birkaç dakika sürebilir.
